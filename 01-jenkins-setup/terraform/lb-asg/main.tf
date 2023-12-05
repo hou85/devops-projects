@@ -4,10 +4,10 @@ provider "aws" {
 
 module "lb-asg" {
   source        = "../modules/lb-asg"
-  subnets       = ["subnet-058a7514ba8adbb07", "subnet-0dbcd1ac168414927", "subnet-032f5077729435858"]
-  ami_id        = "ami-074d40b56472c5b9b"
+  subnets       = ["subnet-0b0c1bcad9b166855", "subnet-0483f6ad34fdac658", "subnet-02212964db92264f8"]
+  ami_id        = "ami-06b7462530e837665"
   instance_type = "t2.small"
-  key_name      = "techiescamp"
+  key_name      = "lab"
   environment   = "dev"
-  vpc_id        = "vpc-0a5ca4a92c2e10163"
+  vpc_id        = "vpc-03334bdcf09a453ea"
 }

@@ -6,9 +6,9 @@ module "ec2_instance" {
   source = "../modules/ec2"
 
   instance_name      = "jenkins-agent"
-  ami_id             = "ami-0e68ab34763bcba1f"
+  ami_id             = "ami-08d99a1273bfa95a7"
   instance_type      = "t2.small"
-  key_name           = "techiescamp"
-  subnet_ids         = ["subnet-058a7514ba8adbb07", "subnet-0dbcd1ac168414927", "subnet-032f5077729435858"]
+  key_name           = "lab"
+  subnet_ids = ["subnet-0b0c1bcad9b166855", "subnet-0483f6ad34fdac658", "subnet-02212964db92264f8"]
   instance_count     = 1
 }
